@@ -1,0 +1,131 @@
+.investments-page {
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.investments-summary {
+  padding: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.investments-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.investments-summary-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.investments-summary-value {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+}
+
+.investments-summary-value.positive {
+  color: var(--accent-green);
+}
+
+.investments-summary-value.negative {
+  color: var(--accent-red);
+}
+
+.investments-add-card {
+  margin-top: 0.5rem;
+}
+
+.investments-add-context {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.investments-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.investments-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.investments-field span {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.investments-field input,
+.investments-field select {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  max-width: 240px;
+}
+
+.investments-simulate-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--bg-primary);
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+}
+
+.investments-simulate-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.investments-error {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--accent-red);
+}
+
+.investments-sim-result {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.investments-sim-result p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.investments-confirm-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--bg-primary);
+  background: var(--accent-green);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.investments-confirm-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

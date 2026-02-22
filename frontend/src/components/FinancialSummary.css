@@ -1,0 +1,71 @@
+.financial-summary {
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.summary-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.summary-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+}
+
+.summary-balance { color: var(--accent); }
+.summary-streak { color: var(--accent); }
+.summary-health { color: var(--accent-green); }
+
+.summary-badges {
+  margin-bottom: 1rem;
+}
+
+.summary-badges-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.summary-badge {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.6rem;
+  background: rgba(6, 182, 212, 0.15);
+  color: var(--accent);
+  border-radius: 20px;
+}
+
+.summary-badges-none {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.summary-sip .summary-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.summary-sip .summary-label {
+  margin-bottom: 0.25rem;
+}

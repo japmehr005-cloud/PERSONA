@@ -1,0 +1,73 @@
+.investment-list {
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
+.investment-list-empty {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.investment-list-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.investment-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.investment-list-item:last-child {
+  border-bottom: none;
+}
+
+.investment-list-item-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.investment-list-item-sip {
+  font-weight: 600;
+  font-family: var(--font-mono);
+  color: var(--accent);
+}
+
+.investment-list-item-risk,
+.investment-list-item-duration {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.investment-list-item-projected {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--accent-green);
+}
+
+.investment-list-item-date {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.investment-list-remove-btn {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--accent-red);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

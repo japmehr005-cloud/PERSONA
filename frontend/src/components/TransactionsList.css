@@ -1,0 +1,65 @@
+.transactions-list {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.transactions-title {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.transactions-empty {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.transactions-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.transactions-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.transactions-item:last-child {
+  border-bottom: none;
+}
+
+.transactions-type {
+  flex: 0 0 70px;
+  color: var(--text-secondary);
+}
+
+.transactions-amount {
+  flex: 1;
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+.transactions-item.transactions-income .transactions-amount {
+  color: var(--accent-green);
+}
+
+.transactions-item.transactions-expense .transactions-amount {
+  color: var(--accent-red);
+}
+
+.transactions-date {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}

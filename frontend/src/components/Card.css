@@ -1,0 +1,47 @@
+.card {
+  display: block;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card:not(a):hover {
+  transform: none;
+}
+
+a.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-title {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.card-primary .card-title {
+  color: var(--accent);
+}
+
+.card-secondary .card-title {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.card-secondary {
+  opacity: 0.95;
+}
+
+.card-secondary:hover {
+  opacity: 1;
+}

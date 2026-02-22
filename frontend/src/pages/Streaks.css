@@ -1,0 +1,136 @@
+.streaks-page {
+  padding: 1.5rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.streaks-hero {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.streak-display,
+.points-display {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.streak-number,
+.points-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--accent);
+  line-height: 1;
+}
+
+.streak-unit,
+.points-unit {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.streak-label {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.streaks-progress {
+  margin-bottom: 1.5rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  height: 10px;
+  background: var(--bg-elevated);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.badge-preview-card {
+  margin-bottom: 1rem;
+}
+
+.badge-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.badge-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.badge-list li:last-child {
+  border-bottom: none;
+}
+
+.badge-list li.earned {
+  color: var(--accent);
+}
+
+.badge-name { flex: 1; }
+.badge-check { color: var(--accent-green); margin-left: 0.5rem; }
+
+.streaks-section-title {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.streaks-badges { margin-bottom: 1rem; }
+
+.streaks-loading { text-align: center; color: var(--text-secondary); }
+
+.streaks-rules {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.badge-months {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.badge-list li.earned .badge-months {
+  color: var(--accent);
+}
+
+.streaks-motivation {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
